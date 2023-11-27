@@ -18,10 +18,7 @@
   <body>
     <div class="containter">
       <div class="row">
-        <div class="col-6 mx-auto">
-          <h1>{{ title }}</h1>
-          {% block content %} Replace this value {% endblock %}
-        </div>
+        <div class="col-6 mx-auto">{% block content %} {% endblock %}</div>
       </div>
     </div>
 
