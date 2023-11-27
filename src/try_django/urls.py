@@ -28,10 +28,10 @@ from .views import (
 
 urlpatterns = [
     path('', home_page),
-    
-    path('blog-new', blog_post_create_view),
+
+    path('blog-new/', blog_post_create_view),
     path('blog/', include('blog.urls')),
-    
+
     # re_path(r'^blog/(?P<post_id>\d+)/$', blog_post_detail_view),
     path('page/', about_page),
     path('pages/', about_page),
