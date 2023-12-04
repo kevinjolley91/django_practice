@@ -17,10 +17,9 @@
   </head>
   <body>
     {% include 'navbar.html' %}
-    <div class="containter">
-      <div class="row">
-        <div class="col-6 mx-auto">{% block content %} {% endblock %}</div>
-      </div>
+    <div class="containte-fluid">
+      {% block content %} 
+      {% endblock %}
     </div>
     {% include 'js.html' %}
   </body>
